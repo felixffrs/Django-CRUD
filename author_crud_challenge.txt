@@ -1,0 +1,27 @@
+Criar uma Aplicação WEB usando Spring Boot.
+ 
+ Mapear A seguinte estrutura de dados:
+ - Autor:
+     - Nome
+     - Data de Nascimento
+     - Bio (Texto de 400 caracteres)
+ 
+ - Livro:
+     - Título
+     - Número de Páginas
+     - Código ISBN (String)
+     - Autores (1 livro pode ter vários autores, e 1 autor pode ter vários livros)
+ 
+ Avaliação:
+ Nota: 1 - 10
+ Descrição
+ Livro (1 livro tem várias Avaliações, uma avaliação pertence à um livro)
+ 
+ 
+ Mapear as entidades para o banco de dados. Usar um banco de dados Postgres.
+ 
+ Não precisa ter migrations. Pode criar o banco de dados na mão ou usar a função de ddl auto do hibernate.
+ Criar Endpoints de CRUD do Autor.
+ 
+ Usar uma arquitetura de Controller, Service e Repository.
+ A Listagem não precisa ter paginação.

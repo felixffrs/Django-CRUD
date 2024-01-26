@@ -1,0 +1,25 @@
+COMMANDS
+
+- django-admin startproject . -> Create new project without 2 folders with the same name
+- django-admin runserver -> Start the server
+- python manage.py startapp <app_name> -> Create a new app with basic structure like (models, admin, apps, view, tests)
+    Note: Remember ever after create a new app register it in INSTALLED_APPS inside of setting.py
+- python manage.py runserver -> Start the server
+- python manage.py check <app created> -> Check if app was correctly registrated in settings.py
+- python manage.py makemigrations -> Migrate all models in model.py
+- python manage.py sqlmigrate <app_name> <migration number> -> Show SQL creation of especific migration
+- python manage.py migrate -> Run all migrations in migrations folder
+    Note: Before run this command we need to every time that a model is updated run the previous command "python manage.py makemigrations" to create a migrations
+
+
+
+
+
+
+
+
+
+
+
+
+
