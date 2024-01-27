@@ -10,7 +10,7 @@ COMMANDS
 - python manage.py sqlmigrate <app_name> <migration number> -> Show SQL creation of especific migration
 - python manage.py migrate -> Run all migrations in migrations folder
     Note: Before run this command we need to every time that a model is updated run the previous command "python manage.py makemigrations" to create a migrations
-
+- python manage.py createsuperuser -> Create super user for login to admin site
 
 
 
