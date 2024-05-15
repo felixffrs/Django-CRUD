@@ -1,7 +1,7 @@
-from django.urls import path, include
-from author_crud.api.api import author_api_view, author_detailed_api_view
+# from django.urls import path
+# from routers import router
+# from views.review_views import BookReviewViewSet
 
-urlpatterns = [
-    path('authors/', author_api_view, name='authors_api_view'),
-    path('authors/<int:id>', author_detailed_api_view, name='author_detailed_api_view'),
-]
+# urlpatterns = router.urls + [
+#     path('books/<int:book_pk>/reviews/', BookReviewViewSet.as_view(), name='book-reviews'),
+# ]
