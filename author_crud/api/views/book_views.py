@@ -7,9 +7,7 @@ class BookViewSet(viewsets.ModelViewSet):
     serializer_class = BookSerializer
 
     def get_queryset(self, pk=None):
-        print(pk,"libros")
         if not pk:
-            print("si")
             return self.get_serializer().Meta.model.objects.all()
         return self.get_serializer().Meta.model.objects.filter(id = pk).first()
 
@@ -25,7 +23,6 @@ class BookViewSet(viewsets.ModelViewSet):
         return Response(serializer.errors, status = status.HTTP_400_BAD_REQUEST)
     
     def update(self, request, pk=None) -> Response:
-        print(pk, "update libro")
         if self.get_queryset(pk):
             serializer = self.get_serializer(self.get_queryset(pk), data = request.data)
             if serializer.is_valid():

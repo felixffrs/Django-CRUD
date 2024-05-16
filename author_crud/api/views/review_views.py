@@ -45,10 +45,7 @@ class BookReviewViewSet(viewsets.ModelViewSet):
         return Response(serializer.errors, status = status.HTTP_400_BAD_REQUEST)
     
     def retrieve(self, request, book_pk=None, pk=None):
-        print(book_pk, pk)
-        print(self.kwargs)
         review = self.get_object(pk)
-        print(review)
         if review:
             serializer = self.serializer_class(review)
             return Response(serializer.data, status = status.HTTP_200_OK)
