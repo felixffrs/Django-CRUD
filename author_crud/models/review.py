@@ -9,4 +9,3 @@ class Review(BaseModel):
     class Meta:
         db_table = 'reviews'
         verbose_name = 'Review'
-        verbose_name = 'Reviews'
